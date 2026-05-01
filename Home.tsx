@@ -138,11 +138,9 @@ export default function Home() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#C10230] via-[#8B0000] to-[#C10230] opacity-95"></div>
         <div
-          className="absolute inset-0 opacity-20"
+          className="absolute inset-0 opacity-10"
           style={{
-            backgroundImage: "url('/manus-storage/mesa_hero_6e5fd6a2.png')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
+            backgroundImage: "radial-gradient(circle at 20% 50%, #FFD100 0%, transparent 50%), radial-gradient(circle at 80% 20%, #FFD100 0%, transparent 40%)",
           }}
         ></div>
 
@@ -175,7 +173,7 @@ export default function Home() {
               </Button>
               <Button
                 variant="outline"
-                className="border-2 border-white text-white hover:bg-white hover:text-[#C10230] font-bold text-lg px-8 py-6 rounded-lg transition"
+                className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-[#C10230] font-bold text-lg px-8 py-6 rounded-lg transition"
               >
                 Join Us
               </Button>
@@ -222,11 +220,11 @@ export default function Home() {
 
             <div className="relative">
               <div className="absolute -top-8 -right-8 w-32 h-32 bg-[#FFD100] rounded-full opacity-20"></div>
-              <img
-                src="/manus-storage/mesa_community_6a5a4f28.png"
-                alt="MESA Community"
-                className="rounded-lg shadow-xl relative z-10 w-full"
-              />
+              <div className="rounded-lg shadow-xl relative z-10 w-full bg-gradient-to-br from-[#C10230] to-[#8B0000] flex flex-col items-center justify-center py-16 px-8 text-white text-center">
+                <Users className="w-16 h-16 mb-4 opacity-80" />
+                <p className="text-2xl font-bold">Join the Community</p>
+                <p className="text-gray-200 mt-2">STEM students supporting each other at CSU Stanislaus</p>
+              </div>
             </div>
           </div>
         </div>
