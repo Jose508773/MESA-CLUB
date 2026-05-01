@@ -209,14 +209,6 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="pt-4 border-t-2 border-gray-200">
-                  <Button
-                    onClick={handleEditMeeting}
-                    className="w-full bg-[#C10230] hover:bg-[#8B0000] text-white font-bold py-3 rounded-lg transition"
-                  >
-                    Update Meeting Details
-                  </Button>
-                </div>
               </div>
             </Card>
 
