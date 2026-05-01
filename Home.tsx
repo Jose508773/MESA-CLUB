@@ -138,9 +138,11 @@ export default function Home() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#C10230] via-[#8B0000] to-[#C10230] opacity-95"></div>
         <div
-          className="absolute inset-0 opacity-10"
+          className="absolute inset-0 opacity-20"
           style={{
-            backgroundImage: "radial-gradient(circle at 20% 50%, #FFD100 0%, transparent 50%), radial-gradient(circle at 80% 20%, #FFD100 0%, transparent 40%)",
+            backgroundImage: "url('/mesa_hero.png')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
           }}
         ></div>
 
@@ -220,11 +222,11 @@ export default function Home() {
 
             <div className="relative">
               <div className="absolute -top-8 -right-8 w-32 h-32 bg-[#FFD100] rounded-full opacity-20"></div>
-              <div className="rounded-lg shadow-xl relative z-10 w-full bg-gradient-to-br from-[#C10230] to-[#8B0000] flex flex-col items-center justify-center py-16 px-8 text-white text-center">
-                <Users className="w-16 h-16 mb-4 opacity-80" />
-                <p className="text-2xl font-bold">Join the Community</p>
-                <p className="text-gray-200 mt-2">STEM students supporting each other at CSU Stanislaus</p>
-              </div>
+              <img
+                src="/mesa_community.png"
+                alt="MESA Community"
+                className="rounded-lg shadow-xl relative z-10 w-full"
+              />
             </div>
           </div>
         </div>
